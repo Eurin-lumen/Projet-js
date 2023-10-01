@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de Devises</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertisseur de Devises</h1>
+        <div>
+            <label for="amount">Montant:</label>
+            <input type="number" id="amount">
+        </div>
+        <div>
+            <label for="from">De:</label>
+            <select id="from">
+                <option value="usd">Dollar américain (USD)</option>
+                <option value="eur">Euro (EUR)</option>
+                <!-- Ajoutez d'autres devises ici -->
+            </select>
+        </div>
+        <div>
+            <label for="to">À:</label>
+            <select id="to">
+                <option value="usd">Dollar américain (USD)</option>
+                <option value="eur">Euro (EUR)</option>
+                <!-- Ajoutez d'autres devises ici -->
+            </select>
+        </div>
+        <button onclick="convertCurrency()">Convertir</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
