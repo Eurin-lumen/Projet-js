@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Contacts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestionnaire de Contacts</h1>
+        <div>
+            <label for="name">Nom:</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="phone">Téléphone:</label>
+            <input type="tel" id="phone">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email">
+        </div>
+        <button onclick="addContact()">Ajouter un Contact</button>
+        <ul id="contactList">
+            <!-- Les contacts seront ajoutés ici dynamiquement -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
